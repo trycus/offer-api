@@ -12,7 +12,7 @@ var app = express();
 
 var  mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/dgame');
+mongoose.connect('mongodb://localhost:28017/dgame');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
