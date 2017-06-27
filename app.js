@@ -12,7 +12,7 @@ var app = express();
 
 var  mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://trycus:Trycus1million$@50.116.52.99/trycus');
+mongoose.connect('mongodb://trycus:Trycus1million$@50.116.52.99:27017/trycus',{auth:{authdb:"admin"}});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
